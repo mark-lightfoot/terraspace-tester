@@ -1,0 +1,13 @@
+{
+	"name": "Tester",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"ms-azuretools.vscode-docker",
+		"ms-vsliveshare.vsliveshare",
+		"davidanson.vscode-markdownlint",
+		"redhat.vscode-yaml",
+        "hashicorp.terraform"
+	],
+	"postCreateCommand": "pre-commit install",
+	"remoteUser": "vscode",
+}
