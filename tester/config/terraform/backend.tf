@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "<%= expansion('terraform-state-:PROJECT-:REGION-:ENV') %>"
-    prefix = "<%= expansion(':REGION/:ENV/:BUILD_DIR') %>"
+    bucket = "<%= expansion(':PROJECT-tfstate') %>"
+    prefix = "<%= expansion(':REGION/:BUILD_DIR') %>"
   }
 }

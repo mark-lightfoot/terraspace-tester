@@ -8,6 +8,20 @@
 		"redhat.vscode-yaml",
         "hashicorp.terraform"
 	],
+	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+	  ],
+	  "runArgs": [
+		"--privileged",
+		"-v",
+		"${env:HOME}${env:USERPROFILE}/.config:/home/vscode/.config",
+		"-v",
+		"${env:HOME}${env:USERPROFILE}/.ssh:/tmp/.ssh-localhost:ro",
+		"-v",
+		"${env:HOME}/.gnupg/:/home/vscode/.gnupg/",
+		"-v",
+		"${env:XDG_RUNTIME_DIR}/gnupg/:/root/.gnupg/"
+	  ],
 	"postCreateCommand": "pre-commit install",
 	"remoteUser": "vscode",
 }

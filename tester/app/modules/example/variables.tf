@@ -3,6 +3,10 @@ variable "name" {
   type        = string
 }
 
+variable "project_id" {
+  type = string
+}
+
 variable "uniform_bucket_level_access" {
   description = "uniform_bucket_level_access"
   type        = bool
@@ -12,5 +16,5 @@ variable "uniform_bucket_level_access" {
 variable "location" {
   description = "location"
   type        = string
-  default     = "US"
+  default     = "EU"
 }
