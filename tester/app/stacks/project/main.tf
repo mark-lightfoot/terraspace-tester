@@ -4,7 +4,9 @@ module "project" {
     source  = "terraform-google-modules/project-factory/google"
     version = "<%= module_version %>"
 
-    name              = var.project_name
+    for_each = toset(var.projects)
+
+    name              = each.value
     org_id            = var.org_id
     folder_id         = var.folder_id
     billing_account   = var.billing_account

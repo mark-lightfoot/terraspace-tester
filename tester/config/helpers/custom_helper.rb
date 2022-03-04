@@ -5,6 +5,10 @@ module Terraspace::Project::CustomHelper
   end
 
   def region
-    ENV['GOOGLE_REGION']
+    file = "app/stacks/#{@mod.name}/tfvars/#{Terraspace.env}.tfvars"
+    reg = File.readlines(file).grep(/^region ?="?\w*-?\w*"?$/)[0]
+    ret = ENV['GOOGLE_REGION']
+    ret = reg.split(/=/, -1)[1].tr!('"','').strip if reg != nil
+    ret
   end
 end

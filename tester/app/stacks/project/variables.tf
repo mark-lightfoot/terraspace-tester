@@ -11,8 +11,8 @@ variable "env" {
   type = string
 }
 
-variable "project_name" {
-  type = string
+variable "projects" {
+  type = list(string)
 }
 
 variable "org_id" {
