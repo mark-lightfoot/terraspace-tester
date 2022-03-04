@@ -1,3 +1,12 @@
+# this exists while not used, to properly supress warnings
+variable "module_version" {
+  type = string
+}
+
+variable "region" {
+  type = string
+}
+
 variable "env" {
   type = string
 }

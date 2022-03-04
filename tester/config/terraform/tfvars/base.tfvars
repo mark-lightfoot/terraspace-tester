@@ -1,0 +1,5 @@
+region="europe-west1"
+project_factory_project="terraspace-lz-pf"
+service_account="project-factory@terraspace-lz-pf.iam.gserviceaccount.com"
+org_id="1048886479208"
+billing_account="00976C-63A0B7-F8AB7D"

@@ -1,6 +1,3 @@
-# Required variables:
-env                = "<%= Terraspace.env %>"
-project_id         = "markbox-cts"
 module_version     = "~> 4.0.0"
 
 # Optional variables:
@@ -9,7 +6,7 @@ subnets = [
     {
         subnet_name   = "gke-subnet"
         subnet_ip     = "10.10.10.0/16"
-        subnet_region = "europe-west1"
+        subnet_region = "<%= region %>"
     }
 ]
 secondary_ranges = {

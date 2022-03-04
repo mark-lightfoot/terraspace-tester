@@ -1,0 +1,7 @@
+billing_account: 00976C-63A0B7-F8AB7D
+folder_id: folders/636734159162
+members:
+- user:mark.lightfoot@cts.co
+project_factory_project: terraspace-lz-pf
+region: europe-west1
+service_account: project-factory@terraspace-lz-pf.iam.gserviceaccount.com
