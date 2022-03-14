@@ -11,4 +11,5 @@ module "project" {
     folder_id         = var.folder_id
     billing_account   = var.billing_account
     random_project_id = true
+    activate_apis     = var.apis
 }

@@ -11,7 +11,7 @@ To deploy all the infrastructure stacks:
 
 To deploy individual stacks:
 
-    terraspace up demo # where demo is app/stacks/demo
+    terraspace up project # where project is app/stacks/project
 
 ## Terrafile
 

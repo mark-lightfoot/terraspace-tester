@@ -26,3 +26,16 @@ variable "folder_id" {
 variable "billing_account" {
   type    = string
 }
+
+variable "apis" {
+  type    = list(string)
+  default = [
+    "cloudresourcemanager.googleapis.com",
+    "compute.googleapis.com",
+    "storage.googleapis.com",
+    "storage-component.googleapis.com",
+    "container.googleapis.com",
+    "cloudbuild.googleapis.com",
+    "clouddeploy.googleapis.com",
+  ]
+}

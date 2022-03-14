@@ -12,3 +12,20 @@ module "vpc" {
     secondary_ranges = var.secondary_ranges
     routes           = var.routes
 }
+
+module "cloud_router" {
+  source  = "terraform-google-modules/cloud-router/google"
+  version = "~> 0.4"
+  project = var.project_id
+  name    = "nat"
+  network = "${var.env}-vpc"
+  region  = var.region
+
+  nats = [{
+    name = "nat"
+  }]
+
+  depends_on = [
+    module.vpc
+  ]
+}
