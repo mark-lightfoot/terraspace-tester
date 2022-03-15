@@ -1,5 +1,5 @@
 # this exists while not used, to properly supress warnings
-variable "module_version" {
+variable "module_version_folder" {
   type = string
 }
 
@@ -23,11 +23,6 @@ variable "folders" {
   type = list(string)
 }
 
-variable "set_roles" {
-  type    = bool
-  default = false
-}
-
-variable "folder_admins" {
-  type = map(string)
+variable "admin_group" {
+  type = string
 }

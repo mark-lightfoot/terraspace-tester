@@ -2,7 +2,7 @@
 
 module "vpc" {
     source  = "terraform-google-modules/network/google"
-    version = "<%= module_version %>"
+    version = "<%= module_version_spec('network') %>"
 
     project_id   = var.project_id
     network_name = "${var.env}-vpc"
@@ -15,7 +15,7 @@ module "vpc" {
 
 module "cloud_router" {
   source  = "terraform-google-modules/cloud-router/google"
-  version = "~> 0.4"
+  version = "<%= module_version_spec('router') %>"
   project = var.project_id
   name    = "nat"
   network = "${var.env}-vpc"

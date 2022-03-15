@@ -1,4 +1,5 @@
-module_version = "~> 4.0.0"
+module_version_network = "~> 4.0.0"
+module_version_router = "~> 0.4"
 project_id     = "<%= output('project.project').to_ruby["dev-k8s"]["project_id"] %>"
 # Optional variables:
 # routing_mode     = "GLOBAL"

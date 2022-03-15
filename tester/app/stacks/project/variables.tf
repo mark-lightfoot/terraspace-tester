@@ -19,7 +19,7 @@ variable "org_id" {
   type    = string
 }
 
-variable "folder_id" {
+variable "folder" {
   type    = string
 }
 

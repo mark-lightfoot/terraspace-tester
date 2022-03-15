@@ -1,5 +1,8 @@
-# this exists while not used, to properly supress warnings
-variable "module_version" {
+variable "module_version_network" {
+  type = string
+}
+
+variable "module_version_router" {
   type = string
 }
 

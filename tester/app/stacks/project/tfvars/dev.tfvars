@@ -1,5 +1,7 @@
 module_version     = "~> 12.0.0"
 
+folder = "<%= output('folder.folders').to_ruby["ids"]["dev"] %>"
+
 projects = ["<%= Terraspace.env %>-k8s"]
 
 apis = [

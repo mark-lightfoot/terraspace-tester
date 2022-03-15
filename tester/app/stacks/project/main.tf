@@ -8,7 +8,7 @@ module "project" {
 
     name              = each.value
     org_id            = var.org_id
-    folder_id         = var.folder_id
+    folder_id         = var.folder
     billing_account   = var.billing_account
     random_project_id = true
     activate_apis     = var.apis
