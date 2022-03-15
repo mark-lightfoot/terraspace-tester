@@ -12,4 +12,5 @@ apis = [
     "container.googleapis.com",
     "cloudbuild.googleapis.com",
     "clouddeploy.googleapis.com",
+    "artifactregistry.googleapis.com",
 ]
