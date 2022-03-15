@@ -17,4 +17,8 @@ module Terraspace::Project::CustomHelper
     envreg = File.readlines(file).grep(/^region *= *"?\w*-?\w*"?$/)[0]
     envreg.nil? ? ENV['GOOGLE_REGION'] : envreg.split(/=/, -1)[1].tr!('"', '').strip
   end
+
+  def enforce_env(env)
+    abort("Only `#{env}` is allowed for this stack!") if Terraspace.env != env
+  end
 end

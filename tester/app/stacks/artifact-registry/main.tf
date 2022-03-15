@@ -1,3 +1,4 @@
+# <%= enforce_env('mgmt') %>
 module "registry" {
     source = "../../modules/artifact-registry"
 
